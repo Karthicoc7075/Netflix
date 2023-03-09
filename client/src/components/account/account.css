@@ -1,0 +1,232 @@
+.account__wrapper{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto 8rem;
+}
+
+.account__title{
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.account__email__address{
+    text-align: center;
+    color: #fff;
+    margin: 3rem auto 5rem;
+}
+
+.account__email__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.account__email__name{
+    color: #756f6a;
+    font-size: 1.4rem;
+}
+
+.account__profile__cards{
+    text-align: center;
+}
+
+
+.account__profile__card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.account__profile__title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+ .account__profile__card{
+    width: 100%;
+    max-width: 160px;
+    margin: 15px;
+    text-align: center;
+}
+
+.account__profile__card .account__profile__card__name{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.account__details{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.account__details__title{
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.account__details__create__date{
+    color: #756f6a;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.account__details__plan{
+    color: #756f6a;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.account__button{
+    border: 3px solid #fff;
+    padding: 10px;
+}
+
+.account__button button{
+     outline: none;
+     border: none;
+     background-color: transparent;
+     color: #fff;
+     font-size: 1.2rem;
+     font-weight: 600;
+}
+
+@media screen and (max-width:959px) {
+
+    .account{
+        margin: 3rem auto 5rem;
+    }
+    
+    .account__title{
+        font-size: 2.2rem;
+    }
+    
+    .account__email__address{
+        text-align: center;
+        color: #fff;
+        margin: 2rem auto 3rem;
+    }
+    
+    .account__email__title{
+        font-size: 1.6rem;
+    }
+    
+    .account__email__name{
+        font-size: 1.2rem;
+    }
+    
+    .account__profile__card__wrapper{
+        margin-bottom: 1rem;
+    }
+    
+    .account__profile__title{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+  
+    
+    .account__profile__card .account__profile__card__name{
+        font-size: 1.2rem;
+    }
+    
+  
+    .account__details__title{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+    
+    .account__details__create__date{
+        font-size: 1.2rem;
+    }
+    
+    .account__button{
+        border: 3px solid #fff;
+        padding: 10px;
+    }
+    
+    .account__button button{
+         font-size: 1rem;
+    }
+    
+    
+}   
+
+@media screen and (max-width:599px) {
+    .account{
+        margin: 2rem auto 4rem;
+    }
+    
+    .account__title{
+        font-size: 1.8rem;
+    }
+    
+    .account__email__address{
+        margin: 2rem auto;
+    }
+    
+    .account__email__title{
+        font-size: 1.4rem;
+        margin-bottom: .6rem;
+    }
+    
+    .account__email__name{
+        font-size: 1rem;
+    }
+    
+    .account__profile__card__wrapper{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    
+    .account__profile__title{
+        font-size: 1.4rem;
+    }
+    
+     .account__profile__card{
+        width: 100%;
+        max-width: 120px;
+        margin: 20px;
+    }
+    
+    .account__profile__card .account__profile__card__name{
+        font-size: 1rem;
+    }
+    
+    .account__details{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    .account__details__title{
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    
+    .account__details__create__date{
+        font-size: 1rem;
+    }
+    
+    .account__button{
+        border: 3px solid #fff;
+        padding: 8px;
+    }
+    
+    .account__button button{
+         font-size: .8rem;
+    }
+    
+}
+

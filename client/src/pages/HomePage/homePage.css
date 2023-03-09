@@ -1,0 +1,158 @@
+.hero__wrapper{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 5vw;
+    overflow: hidden;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info__container{
+    position: relative;
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 800px;
+    width: 35%;
+    padding: 16px 32px 64px 0;
+    z-index: -1;
+
+}
+.info__container::after{
+    background:linear-gradient(90deg,#181818 10%,hsla(0,0%,9%,.98) 20%,hsla(0,0%,9%,.97) 25%,hsla(0,0%,9%,.95) 35%,hsla(0,0%,9%,.94) 40%,hsla(0,0%,9%,.92) 45%,hsla(0,0%,9%,.9) 50%,hsla(0,0%,9%,.87) 55%,hsla(0,0%,9%,.82) 60%,hsla(0,0%,9%,.75) 65%,hsla(0,0%,9%,.63) 70%,hsla(0,0%,9%,.45) 75%,hsla(0,0%,9%,.27) 80%,hsla(0,0%,9%,.15) 85%,hsla(0,0%,9%,.08) 90%,hsla(0,0%,9%,.03) 95%,hsla(0,0%,9%,0)) ;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -250px;
+    z-index: -2;
+}
+
+.info__logo{
+    width: 100%;
+}
+
+
+
+.details__container{
+    margin: 30px 0 0 0;
+}
+
+.title__info {
+    color: #fff;
+}
+
+.title__info .title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.spacer{
+    color: #96a396;
+    margin: 0 5px;
+}
+
+.title__info__synopsis{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.button__container{
+    margin-top: 20px;
+}
+
+.button__container button{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    background: #ffffffe4;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.button__container .button__playBtn{
+    margin: 0 10px 10px 0 ;
+}
+
+.button__container .button__moreInfoBtn{
+    margin:0 10px 10px 0;
+    background: rgb(70,70,70,.7);
+    box-shadow: 3px 5px 10px rgb(0,0,0,0.2);
+    color: #fff;
+}
+
+.button__container .button__listBtn{
+    background: rgb(70,70,70,.7);
+    box-shadow: 3px 5px 10px rgb(0,0,0,0.2);
+    color: #fff;
+}
+
+.button__container svg{
+    margin-right: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+
+.container__image{
+   display: flex;
+   padding-bottom:55%;
+}
+
+.container__image img{
+    position: absolute;
+    top: 0;
+    left: 6%;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+
+@media screen and (max-width:599px) {
+    .hero__wrapper{
+        padding:5px 5vw 20px;
+    }
+
+   .info__logo {
+    max-width: 400px;
+    width:100%; 
+    height: auto;                         ;
+}
+
+    .title__info .title{
+    font-size: 1.6rem;
+}
+
+.title__info__synopsis{
+    font-size: 1rem;
+    font-weight: 600;
+}
+    .info__container{
+        min-width: 0;
+        width: inherit;
+    }
+
+    .container__image img{
+        object-fit: cover;
+    }
+}
+

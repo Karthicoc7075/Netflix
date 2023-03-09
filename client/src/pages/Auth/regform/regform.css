@@ -1,0 +1,96 @@
+.regform__wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.regform p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.regform h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    max-width: 420px;
+    margin: 5px auto;
+}
+
+.regform h6{
+    font-size: 1.4rem;
+    font-weight: 600;
+    max-width: 400px;
+    margin: 12px 0;
+}
+
+.regform h5{
+    color:#333333;
+    font-size: 1rem;
+}
+
+.regform .regform__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+   
+}
+
+.regform .regform__group input{
+    outline: none;
+    padding: 18px 18px ;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.regform .regform__group input[type="email"]{
+      margin:0 0 15px;
+}
+.regform .regform__group .required__error{
+    border: 1px solid #e50914;
+}
+
+.regform .regform__group p{
+    margin: 6px 0;
+    font-weight: 400;
+    color: #e50914;
+}
+
+.regform .regform__group input::placeholder{
+    font-weight: 500;
+}
+
+
+.regform  button{
+    width: 100%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 18px 18px;
+    margin-top: 20px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.9s ease-out;
+    cursor: pointer;
+}
+
+.regform .regform__forget{
+    color: #0087f0;
+    margin-bottom: 20px;
+    transition: all 1.2s ease-in-out;
+}
+
+.regform .regform__forget:hover{
+    text-decoration: underline;
+}

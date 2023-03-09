@@ -1,0 +1,231 @@
+.model__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+        right: 0;
+        bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0,.7);
+    z-index: 100;overflow-y: scroll;
+}
+
+.model{
+    position: relative; 
+   max-width: 900px;
+   width: 90%; 
+    background-color: #010001ff;
+    border-radius: 6px;
+}
+
+.movie__trailer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 340px;
+    background-color: #181818;
+    z-index: 2;
+}
+
+.movie__trailer video{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.movie__trailer .color{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg,#181818 10%,hsla(0,0%,9%,.98) 20%,hsla(0,0%,9%,.97) 25%,hsla(0,0%,9%,.95) 35%,hsla(0,0%,9%,.94) 40%,hsla(0,0%,9%,.92) 45%,hsla(0,0%,9%,.9) 50%,hsla(0,0%,9%,.87) 55%,hsla(0,0%,9%,.82) 60%,hsla(0,0%,9%,.75) 65%,hsla(0,0%,9%,.63) 70%,hsla(0,0%,9%,.45) 75%,hsla(0,0%,9%,.27) 80%,hsla(0,0%,9%,.15) 85%,hsla(0,0%,9%,.08) 90%,hsla(0,0%,9%,.03) 95%,hsla(0,0%,9%,0)) ;
+}
+.movie__title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    max-width: 300px;
+}
+.movie__content{
+    margin-top: -13.4rem;
+    padding: 4rem 3rem 0;
+}
+
+.movie__button__wrapper{
+    display: flex;
+    margin: 1.2rem auto 1.6rem;
+}
+
+.movie__button__wrapper .movie__button__playBtn{
+    display:flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #ffffffe4;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.movie__button__wrapper .movie__button__playBtn svg{
+    font-size: 1rem;
+}
+
+.movie__button__playBtn:hover{
+    transition: background  500ms;
+    background: #ffffffac;
+}
+.movie__card__plusIcon{
+    border: 2px solid #454f5b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    z-index: 10;
+    cursor: pointer;
+   
+}
+
+.movie__card__plusIcon svg{
+    color: #fff;
+}
+
+.movie__card__plusIcon:hover{
+    transition: border 500ms;
+    border: 2px solid #fff;   
+}
+
+.movie__card__likeIcon{
+    border: 2px solid #454f5b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.movie__card__likeIcon svg{
+    color: #fff;
+}
+
+.movie__card__likeIcon:hover{
+    transition: border 500ms;
+    border: 2px solid #fff;
+}
+.movie__card__muteIcon{
+    border: 2px solid #454f5b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.movie__card__muteIcon svg{
+    color: #fff;
+}
+
+.movie__card__muteIcon:hover{
+    transition: border 500ms;
+    border: 2px solid #fff;
+}
+.movie__info{
+    display: flex;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.movie__info .movie__desc{
+    max-width: 60%;
+}
+.movie__info .movie__genres__languages{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 0 2.8rem;
+}
+
+.movie__genres__languages .movie__genres__item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.movie__genres__item .genres__item__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #c1c1c1;
+}
+.movie__genres__languages .movie__languages__item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.movie__languages__item .languages__item__list{
+    color: #c1c1c1;
+}
+.close__button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close__button svg{
+    font-size: 1.4rem;
+    color: aliceblue;
+}
+
+.close__button:hover{
+    opacity: .8;
+}
+
+
+
+@media screen and (max-width:969px) {
+    .movie__info{
+        flex-direction: column;
+    }
+     .movie__desc{
+        max-width: 500px  !important;
+        width: 100%;
+     }
+    .movie__genres__languages{
+        width: 100%;
+        margin: 1rem 0 !important;
+    }
+    .movie__genres__item{
+        width: 100% ;
+    }
+    .genres__item__list{
+        display: inline;
+    }
+    .movie__content{
+        margin-top: 0;
+        padding: 2rem 1rem;
+    }
+    
+}

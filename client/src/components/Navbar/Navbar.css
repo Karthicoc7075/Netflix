@@ -1,0 +1,262 @@
+.main__header__wrapper{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+    background-color: #000;
+}
+  .main__header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 70px;
+    margin:0 3.5rem;
+    padding-top: .5rem;
+    background: transparent;                                                                                                                    
+  }
+  
+
+  .main__header .left{
+    display: flex;
+    align-items: center;
+  }
+  .main__header__logo{
+    width: 150px;
+    margin-right: 20px;
+
+  }
+ 
+  .main__header span{
+    color: #a6a6a6;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .main__header a{
+    text-decoration: none;
+  }
+  .header__brower__link{
+    position: relative;
+    display: none;
+    color: #fff;
+  }
+  
+.header__link{
+  padding-right: 20px;
+}
+
+  .right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .right a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .right svg{
+    margin-right: 4px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .right .input__container{
+    display: flex;
+    align-items: center;
+    width: 3em;
+    transition: all   0.4s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  .right .input__container.show__input {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 0 0 0 10px;
+    width:120px;
+  }
+
+  .right .input__container .input__focus{
+    display:block;
+  }
+
+
+  .right .input__container input{
+    display: none;
+    padding: 8px 10px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.2px ;
+    outline: none;
+    border: none;
+  }
+
+  
+  
+  .right .input__container.input__focus{
+    overflow: visible;
+    display: inline;
+  } 
+  .right .input__container input::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c2c2c2;
+  }
+
+
+.right .header__link__kids span{
+  color: #fff;
+}
+
+.dropdown__noti__menu{
+  position: absolute;
+      top: 80px;
+      right:-10px;
+      width: 200px;
+      padding: 1rem 1rem;
+      background-color: #000000d5;
+      color: #ffffff;
+      border: 3px solid #757575;
+      border-radius: 4px;
+      text-align: center;
+      display: none;
+      transition: all .7s ease-out;
+}
+
+.dropdown__noti__toggle .dropdown__noti__menu.show{
+  display: block;
+}
+.right .dropdown__toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.right .dropdown__toggle svg{
+  font-size: .8rem;
+}
+
+.dropdown__toggle .profile__img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+  }
+
+.dropdown .dropdown__menu.show{
+  display: block;
+}
+
+  .dropdown__menu{
+   display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: .5rem 1rem;
+    background-color: #0f1010;
+    border-top: 2px solid #cccccc;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .dropdown__menu   a {
+    position: relative;
+    border-radius: 2px solid red;
+    color: #c6c6c6;
+    padding: .5rem 0;
+  }
+
+  
+  .dropdown__menu .menu__profile__content {
+    display: flex;
+    align-items: center;
+  }
+  .dropdown__menu .menu__profile__content p{
+    margin-left: 6px;
+    color: #c6c6c6;
+  }
+
+
+  .dropdown__menu .menu__profile__content p:hover{
+    color: #fff;
+  }
+  .dropdown__menu .menu__profile__content img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .dropdown__menu .dropdown__underline{
+    background-color: #a6a6a6;
+    height: 2px;
+    margin: 0  0 1rem;
+  }
+  
+
+@media screen and (max-width:960px) {
+  .main__header__logo{
+    width: 120px;
+  }
+    .input__container input {
+      display: block;
+        width: 180px;
+    }
+
+    .header__brower__link{
+      display:inline;
+    }
+    .header__link{
+      padding:0;
+    }
+    .header__link span{
+      color: #fff;
+    }
+    .dropdown__brower__menu{
+      position: absolute;
+      top: 84px;
+      left:10%;
+      padding: 1.4rem 1.6rem;
+      background-color: #000;
+      border: 2px solid #757575;
+      border-radius: 4px;
+      row-gap: 10px;
+      text-align: center;
+      display: none;
+    }
+
+    .dropdown__brower__menu.show{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
+  @media screen and (max-width:600px) {
+    .main__header__logo{
+        width: 100px;
+    }
+    .dropdown__noti__toggle{
+      display: none;
+    }
+    .input__container.show__input{
+      width: 100px;
+    }
+  }
+  
+  @media screen and (max-width:450px) {
+    .main__header__logo{
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    .main__header{
+       margin: 0 1.5rem;
+    }
+    .dropdown__toggle .profile__img{
+      display: none;
+    }
+}

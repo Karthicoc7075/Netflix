@@ -1,0 +1,12 @@
+//navbar//
+//series//
+//Movies//
+//kids//
+//category//
+//subscription
+//view-profiles
+//manage-profiles//
+//account//
+//edit-account//
+//change-password
+//billing-details

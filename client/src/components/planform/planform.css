@@ -1,0 +1,105 @@
+.planform__wrapper{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.planform{
+    margin:3rem auto;
+}
+
+.planform__textContent .planform__textContent__title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.planform__textContent .planform__textContent__desc{
+    color: #fff;
+    list-style: none;
+}
+
+.planform__textContent .planform__textContent__text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.planform__textContent__desc .planform__textContent__text svg{
+    font-size: 1.8rem;
+    color: #e50914;
+}
+.planGrid__header{
+    display: flex;
+    justify-content: flex-end;
+}
+.planGrid__selector{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #e50914;
+    margin: 20px;
+    opacity: .7;
+}
+
+.planGrid__selector.selected{
+    opacity: 1;
+}
+
+.planGrid__selector span{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.planGrid__table{
+    border-collapse: collapse;
+    color: #fff;
+    width: 100% ;
+}
+
+.planGrid__row{
+    height: 60px; 
+    width: 100%;  
+}
+.planGrid__table .planGrid__row {
+    border-bottom: 2px solid #ccc;
+}
+
+.planGrid__table .planGrid__row td{
+    text-align: center  ;
+}
+
+.planGrid__table .planGrid__title{
+    width: 40%;
+    text-align: start !important;
+}
+
+
+.planGrid__string{
+    width: 15% ;
+
+}
+
+.planGrid__supportDevices__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 14px;
+    font-size: 1rem;
+} 
+
+.planGrid__supportDevices__icon svg{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+
+.planGrid__string.selected{
+    color: #e50914;
+}

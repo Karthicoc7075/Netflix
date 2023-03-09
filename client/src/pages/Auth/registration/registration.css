@@ -1,0 +1,64 @@
+.registration__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.registration { 
+  text-align: center;
+  transition: sideAnime 1.5s ease-in;
+}
+
+.registration img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.registration p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.registration h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.registration h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 300px;
+  margin: 20px auto;
+  color: #333d6e;
+}
+
+.registration a {
+  display: block;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 18px;
+  max-width: 280px;
+  margin: 0 auto;
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.9s ease-out;
+  cursor: pointer;
+}
+
+
+
+
